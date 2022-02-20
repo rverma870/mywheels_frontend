@@ -37,9 +37,9 @@ function DealerDetailsForm() {
     e.preventDefault();
 
     Axios.post(DealerRegistration, {
-      DealerName: dealerDetails.dealerName,
+      dealerName: dealerDetails.dealerName,
+      dealerCompany: dealerDetails.company,
       email: dealerDetails.email,
-      DealerCompany: dealerDetails.company,
       gst_NO: dealerDetails.gst_no,
     })
       .then((res) => {
