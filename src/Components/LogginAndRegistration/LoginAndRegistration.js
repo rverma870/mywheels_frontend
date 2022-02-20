@@ -176,9 +176,10 @@ const LoginAndRegistration = () => {
                   </span>
                 </div>
                 <input
-                  type="current-password"
+                  type="password"
                   className="form-control my-2"
                   name="password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   value={UserDetailsEntered.password}
                   onChange={handleInput}
                   placeholder="Password "
@@ -277,10 +278,10 @@ const LoginAndRegistration = () => {
                   </span>
                 </div>
                 <input
-                  type="current-password"
+                  type="password"
                   className="form-control my-2"
                   name="password"
-                  // pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   placeholder="Password"
                   value={UserDetailsEntered.password}
                   onChange={handleInput}

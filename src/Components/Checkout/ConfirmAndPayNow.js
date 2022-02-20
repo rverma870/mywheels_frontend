@@ -128,7 +128,7 @@ function ConfirmAndPayNow() {
         .then((res) => {
           console.log(res.data);
           CheckOutActions.removeCheckOut();
-          swal("Good job!", "congrates !! Payment Successfull", "success").finally(()=>pageAction.increaseCheckOutPage());
+          swal("Payment Successfull !", "click below to continue", "success").finally(()=>pageAction.increaseCheckOutPage());
         })
         .catch((err) => {
           console.error(
